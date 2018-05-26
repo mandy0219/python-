@@ -4,6 +4,10 @@ Spyder Editor
 
 This is a temporary script file.
 """
-import matplotlib.pyplot as plt
-plt.plot([1,2,3,4],'r')
-plt.show()
+import csv
+
+fn='c:/圖.csv'
+with open(fn) as csvFile:
+    csvReader=csv.reader(csvFile)
+    listReport=list(csvReader)
+print(listReport)
